@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #ff5100;
+  font-weight: 400;
+  font-size: 1.4em;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #ebeff0;
+}
+
+#app {
+  /*background-color: rgb(53, 46, 38);*/
+  width: 90vw;
+  display: flex;
+  margin: auto;
+  margin-top: 5vh;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90vh;
+  overflow: auto;
+}
+
+.clock {
+  /*background-color: rgb(67, 88, 71);*/
+  padding: 60px 00px 60px 0px;
+  width: 50vw;
+}
+
+.weather {
+  /*background-color: rgb(60, 61, 41);*/
+  width: 50vw;
+}
+
+.settings {
+  /*background-color: rgba(95, 158, 160, 0.376);*/
+  position: absolute;
+  right: 5vw;
+  bottom: 5vh;
+  padding: 0 2vw 2vh 0;
+}
+
+.settings-menu {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100vh;
+}
+
+.settings svg {
+  cursor: pointer;
+}
+
+.strong {
+  font-weight: 700;
+}
+
+.light {
+  font-weight: 300;
+}
+
+/*Animations*/
+.fade-enter-active {
+  transition: all 0.2s ease-out;
+}
+.fade-leave-active {
+  transition: all 0.2s cubic-bezier(1, 0.5, 0.8, 1);
+}
+.fade-leave-to,
+.fade-enter-from {
+  transform: translateY(400px);
+  opacity: 0.6;
+}
